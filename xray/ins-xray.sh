@@ -227,7 +227,7 @@ cat > /etc/xray/config.json << END
       }
     },
     {
-      "port": 2083,
+      "port": 8443,
       "protocol": "trojan",
       "settings": {
         "clients": [
@@ -238,7 +238,7 @@ cat > /etc/xray/config.json << END
         ],
         "fallbacks": [
           {
-            "dest": 80
+            "dest": 22
           }
         ]
       },
