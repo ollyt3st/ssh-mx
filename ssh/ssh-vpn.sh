@@ -271,11 +271,15 @@ connect = 127.0.0.1:109
 
 [openssh]
 accept = 777
-connect = 127.0.0.1:443
+connect = 127.0.0.1:2053
 
 [openvpn]
 accept = 990
 connect = 127.0.0.1:1194
+
+[sslws]
+accept = 443
+connect = 127.0.0.1:80
 
 END
 
