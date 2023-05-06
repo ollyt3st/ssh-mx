@@ -1,7 +1,7 @@
 ### Command Install
 
 ```
-rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/senowahyu62/scriptvps/main/setup.sh && chmod +x setup.sh && ./setup.sh
+rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/tcatvpn/scriptvps/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 
 ### Fitur Script
@@ -43,13 +43,13 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 
 # Service & Port
 
-• OpenSSH                 : 443, 22
+• OpenSSH                 : 22
 
 • OpenVPN                 : TCP 1194, UDP 2200, SSL 990
 
-• Stunnel5                : 443, 445, 777
+• Stunnel5                : 8443, 445, 777
 
-• Dropbear                : 443, 109, 143
+• Dropbear                : 109, 143
 
 • Squid Proxy             : 3128, 8080
 
@@ -125,4 +125,4 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 ------------
 **Telegram**
 ------------
-[Senovpn](https://t.me/senovpn)
+[SSLHTUNNELMAX](https://t.me/SSLHTUNNELMAX)
