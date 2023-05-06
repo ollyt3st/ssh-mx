@@ -192,7 +192,7 @@ cat > /etc/xray/config.json << END
       }
     },
     {
-      "port": 80,
+      "port": 88,
       "protocol": "vless",
       "settings": {
         "clients": [
@@ -362,8 +362,8 @@ END
 # Accept port Xray
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8443 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m udp -p udp --dport 80 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 88 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 88 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8443 -j ACCEPT
 iptables-save > /etc/iptables.up.rules
@@ -397,7 +397,7 @@ cat > /etc/trojan-go/config.json << END
   "local_addr": "0.0.0.0",
   "local_port": 2087,
   "remote_addr": "127.0.0.1",
-  "remote_port": 89,
+  "remote_port": 8443,
   "log_level": 1,
   "log_file": "/var/log/trojan-go/trojan-go.log",
   "password": [
