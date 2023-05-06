@@ -46,7 +46,7 @@ User=root
 CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 NoNewPrivileges=true
-ExecStart=/usr/bin/python -O /usr/local/bin/ws-nontls 8880
+ExecStart=/usr/bin/python -O /usr/local/bin/ws-nontls 80
 Restart=on-failure
 
 [Install]
@@ -56,6 +56,83 @@ END
 systemctl daemon-reload
 systemctl enable ws-nontls
 systemctl restart ws-nontls
+
+cat > /etc/systemd/system/ws-nontls1.service << END
+
+[Unit]
+
+Description=Python Proxy Mod By Akbar Maulana
+
+Documentation=https://t.me/Akbar218
+
+After=network.target nss-lookup.target
+
+[Service]
+
+Type=simple
+
+User=root
+
+CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+
+AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+
+NoNewPrivileges=true
+
+ExecStart=/usr/bin/python -O /usr/local/bin/ws-nontls 8880
+
+Restart=on-failure
+
+[Install]
+
+WantedBy=multi-user.target
+
+END
+
+systemctl daemon-reload
+
+systemctl enable ws-nontls1
+
+systemctl restart ws-nontls1
+
+
+cat > /etc/systemd/system/ws-nontls2.service << END
+
+[Unit]
+
+Description=Python Proxy Mod By Akbar Maulana
+
+Documentation=https://t.me/Akbar218
+
+After=network.target nss-lookup.target
+
+[Service]
+
+Type=simple
+
+User=root
+
+CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+
+AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+
+NoNewPrivileges=true
+
+ExecStart=/usr/bin/python -O /usr/local/bin/ws-nontls 2082
+
+Restart=on-failure
+
+[Install]
+
+WantedBy=multi-user.target
+
+END
+
+systemctl daemon-reload
+
+systemctl enable ws-nontls2
+
+systemctl restart ws-nontls2
 
 # Getting Proxy Template
 wget -q -O /usr/local/bin/ws-ovpn https://${akbarvpn}/ws-ovpn.py
@@ -102,7 +179,7 @@ User=root
 CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 NoNewPrivileges=true
-ExecStart=/usr/bin/python -O /usr/local/bin/ws-tls 443
+ExecStart=/usr/bin/python -O /usr/local/bin/ws-tls 2053
 Restart=on-failure
 
 [Install]
