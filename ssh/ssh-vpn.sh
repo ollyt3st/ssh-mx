@@ -213,7 +213,7 @@ RUN=yes
 # systemd users: don't forget to modify /lib/systemd/system/sslh.service
 DAEMON=/usr/sbin/sslh
 
-DAEMON_OPTS="--user sslh --listen 0.0.0.0:2053--ssl 127.0.0.1:777 --ssh 127.0.0.1:109 --openvpn 127.0.0.1:1194 --http 127.0.0.1:8880 --pidfile /var/run/sslh/sslh.pid -n"
+DAEMON_OPTS="--user sslh --listen 0.0.0.0:2053 --ssl 127.0.0.1:777 --ssh 127.0.0.1:109 --openvpn 127.0.0.1:1194 --http 127.0.0.1:8880 --pidfile /var/run/sslh/sslh.pid -n"
 
 END
 
@@ -394,7 +394,7 @@ netfilter-persistent reload
 cd /usr/bin
 wget -O addhost "https://${akbarvpn}/addhost.sh"
 wget -O about "https://${akbarvpn}/about.sh"
-wget -O menu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/menu.sh"
+wget -O menu "https://raw.githubusercontent.com/tcatvpn/scriptvps/main/update/menu.sh"
 wget -O addssh "https://${akbarvpn}/addssh.sh"
 wget -O trialssh "https://${akbarvpn}/trialssh.sh"
 wget -O delssh "https://${akbarvpn}/delssh.sh"
@@ -437,21 +437,21 @@ wget -O addtrgo "https://${akbarvpnnn}/addtrgo.sh"
 wget -O deltrgo "https://${akbarvpnnn}/deltrgo.sh"
 wget -O renewtrgo "https://${akbarvpnnn}/renewtrgo.sh"
 wget -O cektrgo "https://${akbarvpnnn}/cektrgo.sh"
-wget -O portsshnontls "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/websocket/portsshnontls.sh"
-wget -O portsshws "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/websocket/portsshws.sh"
+wget -O portsshnontls "https://raw.githubusercontent.com/tcatvpn/scriptvps/main/websocket/portsshnontls.sh"
+wget -O portsshws "https://raw.githubusercontent.com/tcatvpn/scriptvps/main/websocket/portsshws.sh"
 
-wget -O sshovpnmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/sshovpn.sh"
-wget -O l2tpmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/l2tpmenu.sh"
-wget -O pptpmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/pptpmenu.sh"
-wget -O sstpmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/sstpmenu.sh"
-wget -O wgmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/wgmenu.sh"
-wget -O ssmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/ssmenu.sh"
-wget -O ssrmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/ssrmenu.sh"
-wget -O vmessmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/vmessmenu.sh"
-wget -O vlessmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/vlessmenu.sh"
-wget -O trmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/trmenu.sh"
-wget -O trgomenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/trgomenu.sh"
-wget -O setmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/setmenu.sh"
+wget -O sshovpnmenu "https://raw.githubusercontent.com/tcatvpn/scriptvps/main/update/sshovpn.sh"
+wget -O l2tpmenu "https://raw.githubusercontent.com/tcatvpn/scriptvps/main/update/l2tpmenu.sh"
+wget -O pptpmenu "https://raw.githubusercontent.com/tcatvpn/scriptvps/main/update/pptpmenu.sh"
+wget -O sstpmenu "https://raw.githubusercontent.com/tcatvpn/scriptvps/main/update/sstpmenu.sh"
+wget -O wgmenu "https://raw.githubusercontent.com/tcatvpn/scriptvps/main/update/wgmenu.sh"
+wget -O ssmenu "https://raw.githubusercontent.com/tcatvpn/scriptvps/main/update/ssmenu.sh"
+wget -O ssrmenu "https://raw.githubusercontent.com/tcatvpn/scriptvps/main/update/ssrmenu.sh"
+wget -O vmessmenu "https://raw.githubusercontent.com/tcatvpn/scriptvps/main/update/vmessmenu.sh"
+wget -O vlessmenu "https://raw.githubusercontent.com/tcatvpn/scriptvps/main/update/vlessmenu.sh"
+wget -O trmenu "https://raw.githubusercontent.com/tcatvpn/scriptvps/main/update/trmenu.sh"
+wget -O trgomenu "https://raw.githubusercontent.com/tcatvpn/scriptvps/main/update/trgomenu.sh"
+wget -O setmenu "https://raw.githubusercontent.com/tcatvpn/scriptvps/main/update/setmenu.sh"
 
 
 chmod +x portsshnontls
