@@ -73,5 +73,5 @@ echo -e "============HTTP=============="
 echo -e "GET / HTTP/1.1[crlf]Host: ${domain}[crlf]Connection: Upgrade, HTTP2-Settings
  > Upgrade: h2c [crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "============HTTP=============="
-echo -e "POST / HTTP/1.1[crlf]Host: bughost.com[crlf]Expect: 100-continue[crlf][crlf]GET- / HTTP/1.1[crlf]Host: domaincloud.com [crlf]Upgrade: Websocket[crlf][crlf]"
+echo -e "POST / HTTP/1.1[crlf]Host: bughost.com[crlf]Expect: 100-continue[crlf][crlf]GET- / HTTP/1.1[crlf]Host: ${domain} [crlf]Upgrade: Websocket[crlf][crlf]"
 echo -e "============HTTP=============="
