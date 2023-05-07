@@ -238,7 +238,7 @@ cat > /etc/xray/config.json << END
         ],
         "fallbacks": [
           {
-            "dest": 22
+            "dest": 80
           }
         ]
       },
