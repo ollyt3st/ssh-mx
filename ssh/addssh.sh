@@ -22,7 +22,7 @@ read -p "Expired (Days): " masaaktif
 IP=$(wget -qO- ipinfo.io/ip);
 ws="$(cat ~/log-install.txt | grep -w "Websocket TLS" | cut -d: -f2|sed 's/ //g')"
 ws2="$(cat ~/log-install.txt | grep -w "Websocket None TLS" | cut -d: -f2|sed 's/ //g')"
-udps="$(cat ~/log-install.txt | grep -w "udpserver" | cut -d: -f2)"
+udps="$(cat ~/log-install.txt | grep -w "udpServer" | cut -d: -f2)"
 ssl="$(cat ~/log-install.txt | grep -w "Stunnel5" | cut -d: -f2)"
 sqd="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
 ovpn="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
