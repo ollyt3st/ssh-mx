@@ -128,7 +128,7 @@ echo "   - XRAYS Vless None TLS    : 88"  | tee -a log-install.txt
 echo "   - XRAYS Trojan            : 8443"  | tee -a log-install.txt
 echo "   - Websocket TLS           : 8443, 443, 2053"  | tee -a log-install.txt
 echo "   - Websocket None TLS      : 80, 8880, 2082"  | tee -a log-install.txt
-echo "   - Websocket Ovpn          : 2086"  | tee -a log-install.txt
+echo "   - Websocket Ovpn          : 2086ntls, 2096tls"  | tee -a log-install.txt
 echo "   - OHP SSH                 : 8181"  | tee -a log-install.txt
 echo "   - OHP Dropbear            : 8282"  | tee -a log-install.txt
 echo "   - OHP OpenVPN             : 8383"  | tee -a log-install.txt
