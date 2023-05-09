@@ -74,4 +74,11 @@ echo -e "GET / HTTP/1.1[crlf]Host: ${domain}[crlf]Connection: Upgrade, HTTP2-Set
  > Upgrade: h2c [crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "============HTTP=============="
 echo -e "POST / HTTP/1.1[crlf]Host: bughost.com[crlf]Expect: 100-continue[crlf][crlf]GET- / HTTP/1.1[crlf]Host: ${domain} [crlf]Upgrade: Websocket[crlf][crlf]"
-echo -e "============HTTP=============="
+echo -e "============================="
+echo -e "OpenVPN Headers http"
+echo -e "============================="
+echo -e "http-proxy-option CUSTOM-HEADER CONNECT type.host.here@1194 HTTP/1.0 
+http-proxy-option CUSTOM-HEADER Host type.host.here
+http-proxy-option CUSTOM-HEADER Content-Type text/html
+http-proxy-option CUSTOM-HEADER Content-Length 9999999999999"
+echo -e "============================="
