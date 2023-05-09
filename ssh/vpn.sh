@@ -69,7 +69,7 @@ cat > /etc/openvpn/tcp.ovpn <<-END
 client
 dev tun
 proto tcp
-remote ${domain} 1194
+remote xxxxxxxxx 1194
 http-proxy-option CUSTOM-HEADER Host type.host.here
 http-proxy xxxxxxxxx 8080
 resolv-retry infinite
@@ -107,7 +107,7 @@ cat > /etc/openvpn/ssl.ovpn <<-END
 client
 dev tun
 proto tcp
-remote ${domain} 2096
+remote xxxxxxxxx 2096
 resolv-retry infinite
 route-method exe
 nobind
