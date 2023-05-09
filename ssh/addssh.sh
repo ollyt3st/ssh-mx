@@ -39,7 +39,7 @@ echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
 hariini=`date -d "0 days" +"%Y-%m-%d"`
 expi=`date -d "$masaaktif days" +"%Y-%m-%d"`
 echo -e ""
-echo -e "Informasi SSH & OpenVPN"
+echo -e "VPSPLUS SSH & OpenVPN"
 echo -e "=============================="
 echo -e "IP/Host       : $IP"
 echo -e "Domain        : ${domain}"
@@ -51,16 +51,16 @@ echo -e "Port Squid    : $sqd"
 echo -e "OHP SSH       : 8181"
 echo -e "OHP Dropbear  : 8282"
 echo -e "OHP OpenVPN   : 8383"
-echo -e "Ssh Ws SSL    : $ws"
-echo -e "Ssh Ws No SSL : $ws2"
-echo -e "Ovpn Ws       : 2086"
+echo -e "Ssh Ws TLS    : $ws"
+echo -e "Ssh Ws NTLS : $ws2"
+echo -e "Ovpn Ws       : 2086ntls, 2096tls"
 echo -e "Port TCP      : $ovpn"
 echo -e "Port UDP      : $ovpn2"
 echo -e "Port SSL      : 990"
 echo -e "OVPN TCP      : http://$IP:89/tcp.ovpn"
 echo -e "OVPN UDP      : http://$IP:89/udp.ovpn"
 echo -e "OVPN SSL      : http://$IP:89/ssl.ovpn"
-echo -e "BadVpn        : 7100-7200-7300"
+echo -e "BadVpn        : 7100-7200-7300-7400-7500-7600-7700-7800-7900"
 echo -e "Created       : $hariini"
 echo -e "Expired       : $expi"
 echo -e "=============================="
@@ -75,10 +75,20 @@ echo -e "GET / HTTP/1.1[crlf]Host: ${domain}[crlf]Connection: Upgrade, HTTP2-Set
 echo -e "============HTTP=============="
 echo -e "POST / HTTP/1.1[crlf]Host: bughost.com[crlf]Expect: 100-continue[crlf][crlf]GET- / HTTP/1.1[crlf]Host: ${domain} [crlf]Upgrade: Websocket[crlf][crlf]"
 echo -e "============================="
-echo -e "OpenVPN Headers http"
+echo -e "OpenVPN Header http 1"
 echo -e "============================="
 echo -e "http-proxy-option CUSTOM-HEADER CONNECT type.host.here@1194 HTTP/1.0 
 http-proxy-option CUSTOM-HEADER Host type.host.here
 http-proxy-option CUSTOM-HEADER Content-Type text/html
 http-proxy-option CUSTOM-HEADER Content-Length 9999999999999"
+echo -e "============================="
+echo -e "http-proxy-option CUSTOM-HEADER CONNECT HTTP/1.0
+http-proxy-option CUSTOM-HEADER Host sslhtunnelmax.com 
+http-proxy-option CUSTOM-HEADER Content-Type text/html
+http-proxy-option CUSTOM-HEADER Content-Length 209
+http-proxy-option CUSTOM-HEADER Server AkamaiGHost"
+echo -e "============================="
+echo -e "http-proxy-option CUSTOM-HEADER ""
+http-proxy-option CUSTOM-HEADER "GET type.host.here/ HTTP/1.1"
+http-proxy-option CUSTOM-HEADER "Keep-Connection: KeepAlive"
 echo -e "============================="
