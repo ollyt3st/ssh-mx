@@ -281,6 +281,10 @@ connect = 127.0.0.1:1194
 accept = 443
 connect = 127.0.0.1:80
 
+[OVPNWS]
+accept = 2096
+connect = 127.0.0.1:2086
+
 END
 
 # make a certificate
