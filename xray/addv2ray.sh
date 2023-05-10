@@ -93,3 +93,6 @@ echo -e "Link TLS    : ${xrayv2ray1}"
 echo -e "========================="
 echo -e "Link No TLS : ${xrayv2ray2}"
 echo -e "========================="
+echo -e "SLOWDNS KEY : aa62acce97d9bcff454e468c413ad0fa32500246d2d851386e95edc9dbe44a33"
+echo -e "NS_DOMAIN   : dns.${domain}
+echo -e "========================="
