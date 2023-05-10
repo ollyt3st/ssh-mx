@@ -88,6 +88,9 @@ http-proxy-option CUSTOM-HEADER Content-Type text/html
 http-proxy-option CUSTOM-HEADER Content-Length 209
 http-proxy-option CUSTOM-HEADER Server AkamaiGHost"
 echo -e "============================="
-echo -e "http-proxy-option CUSTOM-HEADER ""
-http-proxy-option CUSTOM-HEADER "GET type.host.here/ HTTP/1.1"
-http-proxy-option CUSTOM-HEADER "Keep-Connection: KeepAlive"
+echo -e "PAYLOAD OHP SSH + DROPBEAR   "
+echo -e "============================="
+echo -e "GET /SSLHTUNNELMAX.COM/ HTTP/1.1
+Host: type.host.here 
+User-Agent: [ua][crlf]Content-Length: 9999999999999[crlf][crlf]"
+echo -e "============================="
