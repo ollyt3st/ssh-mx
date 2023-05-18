@@ -79,7 +79,7 @@ AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 
 NoNewPrivileges=true
 
-ExecStart=/usr/bin/python -O /usr/local/bin/ws-nontls 8881
+ExecStart=/usr/bin/python -O /usr/local/bin/ws-nontls 8880
 
 Restart=on-failure
 
