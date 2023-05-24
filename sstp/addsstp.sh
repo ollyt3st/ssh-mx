@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
+# My Telegram : https://t.me/SSLHTUNNELMAX
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -67,5 +67,5 @@ Cert      : http://$IP:89/server.crt
 Created   : $hariini
 Expired   : $exp
 ============================
-Script By Akbar Maulana
+Script By MAHBOUB-MILLON
 EOF
