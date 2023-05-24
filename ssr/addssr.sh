@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
+# My Telegram : https://t.me/SSLHTUNNELMAX 
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -87,4 +87,4 @@ echo -e "Expired     : ${exp} "
 echo -e "=========================="
 echo -e "Link SSR    : ${ssr_link}"
 echo -e "=========================="
-echo -e "Script By Akbar Maulana"
+echo -e "Script By MAHBOUB-MILLON"
