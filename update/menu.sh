@@ -21,7 +21,7 @@ echo -e "$y 9$yy●  $y VLESS MENU$wh"
 echo -e "$y 10$yy● $y TROJAN GFW MENU$wh"
 echo -e "$y 11$yy● $y TROJAN GO MENU$wh"
 echo -e "$y 12$yy■ $y Settings$wh"
-echo -e "$y 13$yy● $y Exit$wh"
+echo -e "$y 13$yy● $yyy Exit$wh"
 echo -e "$m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 read -p "Select From Options [ 1 - 13 ] : " menu
