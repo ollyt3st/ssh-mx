@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/Akbar218
+# My Telegram : https://t.me/SSLHTUNNELMAX
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -116,5 +116,5 @@ echo -e "Expired  : $exp"
 echo -e "======================="
 echo -e "Link WG  : http://$MYIP:89/$CLIENT_NAME.conf"
 echo -e "======================="
-echo -e "Script By Akbar Maulana"
+echo -e "Script By MAHBOUB-MILLON"
 rm -f /root/wg0-client-$CLIENT_NAME.conf
