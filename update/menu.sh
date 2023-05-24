@@ -19,7 +19,7 @@ echo -e "$yy 8$y●  VMESS MENU$wh"
 echo -e "$yy 9$y●  VLESS MENU$wh"
 echo -e "$yy 10$y● TROJAN GFW MENU$wh"
 echo -e "$yy 11$y● TROJAN GO MENU$wh"
-echo -e "$yy 12$y● Settings$wh"
+echo -e "$yy 12$y■ Settings$wh"
 echo -e "$yy 13$y● Exit$wh"
 echo -e "$y━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
