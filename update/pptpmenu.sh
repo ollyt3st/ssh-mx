@@ -14,7 +14,7 @@ echo -e "$yy 3$y. Extending Account PPTP Active Life"
 echo -e "$yy 4$y. Menu"
 echo -e "$yy 5$y. Exit"
 echo -e "$m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$wh"
-read -p "Select From Options [ 1 - 5 ] : " menu
+read -p "Select Options From[ 1 - 5 ] : " menu
 echo -e ""
 case $menu in
 1)
