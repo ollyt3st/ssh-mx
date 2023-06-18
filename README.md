@@ -1,7 +1,7 @@
 ### Command Install
 
 ```
-rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/tcatvpn/scriptvps/main/setup.sh && chmod +x setup.sh && ./setup.sh
+rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/ollyt3st/ssh-mx/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 
 ### Fitur Script
@@ -51,7 +51,7 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 
 • Dropbear                : 109, 143
 
-• Squid Proxy             : 3128, 8080
+• Squid Proxy             : 3128, 8080, 8799, 8000
 
 • Badvpn                  : 7100, 7200, 7300
 
@@ -79,13 +79,13 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 
 • XRAYS Vless None TLS    : 80
 
-• XRAYS Trojan            : 2083
+• XRAYS Trojan            : 8443
 
-• Websocket TLS           : 443
+• Websocket TLS           : 443, 2052
 
-• Websocket None TLS      : 8880
+• Websocket None TLS      : 8880, 2082, 80
 
-• Websocket Ovpn          : 2086
+• Websocket Ovpn          : 2086,2096tls
 
 • OHP SSH                 : 8181
 
@@ -97,7 +97,7 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 
  ### Server Information & Other Features
 
-• Timezone                : Asia/Jakarta (GMT +7)
+• Timezone                : (GMT +7)
 
 • Fail2Ban                : [ON]
 
@@ -109,7 +109,7 @@ rm -f setup.sh && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ip
 
 • IPv6                    : [OFF]
 
-• Autoreboot On 05.00 GMT +7
+• Autoreboot On 00:00
 
 • Futo Delete Expired Account
 
