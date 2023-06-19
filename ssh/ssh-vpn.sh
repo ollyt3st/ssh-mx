@@ -278,8 +278,8 @@ accept = 990
 connect = 127.0.0.1:1194
 
 [sslws]
-accept = 443
-connect = 127.0.0.1:80
+accept = 449
+connect = 127.0.0.1:8181
 
 [OVPNWS]
 accept = 2096
